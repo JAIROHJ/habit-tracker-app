@@ -1,18 +1,12 @@
-import React from 'react'
-import Home from './components/Home';
-import WeekView from './components/WeekView';
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import "./App.css";
+import HabitContainer from "./components/HabitContainer";
 
-const App = () => {
-  return (
-    <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Home/>} />
-      <Route path="/week-view" element={<WeekView/>} />
-      
-    </Routes>
-    </BrowserRouter>
-  )
+function App() {
+	return (
+		<div className="App">
+			<HabitContainer />
+		</div>
+	);
 }
 
-export default App
+export default App;
